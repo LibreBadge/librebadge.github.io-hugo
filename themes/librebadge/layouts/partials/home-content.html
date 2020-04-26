@@ -1,10 +1,12 @@
-<div class="jumbotron w-50 h-50 my-auto mx-auto text-light" style="background-color: #343a40b3;">
+<div class="pageContent vh-100">
+<div class="jumbotron w-50 mx-auto text-light" style="background-color: #343a40b3; margin-top: 12.5%;">
   <h1 class="display-4">LibreBadge</h1>
   <hr class="my-4">
   <p class="lead">{{ $.Site.Params.description}}</p>
   <a class="btn btn-dark btn-lg" href="{{ $.Site.Params.githubURL}}" role="button">Github <img src="github logo-light.svg" height="30"></a>
 </div>
-<div id="stripes" class="background">
+</div>
+<div id="gradient" class="background">
   <span></span>
   <span></span>
   <span></span>
@@ -16,7 +18,7 @@
 :root {
   --background: linear-gradient(150deg, #017BFF 15%, #01a5ff 30%, #27a767 70%, #27A745 95%);
 }
-#stripes {
+#gradient {
   width: 100%;
   height: 35vw;
   background: var(--background);
@@ -27,7 +29,7 @@
   transform-origin: 0;
 }
 
-#stripes span:nth-child(1) {
+#gradient span:nth-child(1) {
   grid-column: span 1;
   background: var(--first);
 }
