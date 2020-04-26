@@ -1,0 +1,7 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "LibreBadge"
+theme = "librebadge"
+[params]
+  githubURL = "http://github.com/LibreBadge/LibreBadge"
+  logo = "librebadgelogo.svg"

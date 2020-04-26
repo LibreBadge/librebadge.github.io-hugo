@@ -1,0 +1,59 @@
+<div id="stripes" class="background">
+  <span></span>
+  <span></span>
+  
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<style>
+:root {
+  --background: linear-gradient(150deg, #017BFF 15%, #01a5ff 30%, #27a767 70%, #27A745 95%);
+}
+#stripes {
+  width: 100%;
+  height: 35vw;
+  background: var(--background);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  transform: skewY(-12deg);
+  transform-origin: 0;
+}
+
+#stripes span:nth-child(1) {
+  grid-column: span 1;
+  background: var(--first);
+}
+#wrapper{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.content{
+    position: relative;
+    z-index: 100;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+</style>
+<script>
+    $(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 500) { 
+              $('.navbar').addClass('bg-primary');
+          } else {
+              $('.navbar').removeClass('bg-primary');
+          }
+        });
+});
+</script>
