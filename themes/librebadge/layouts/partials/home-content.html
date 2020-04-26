@@ -1,10 +1,8 @@
-<div class="pageContent vh-100">
-<div class="jumbotron w-50 mx-auto text-light" style="background-color: #343a40b3; margin-top: 12.5%;">
+<div class="jumbotron w-50 mx-auto text-light text-center" style="background-color: #343a40b3; margin-top: 12.5%;">
   <h1 class="display-4">LibreBadge</h1>
-  <hr class="my-4">
+  <br>
   <p class="lead">{{ $.Site.Params.description}}</p>
   <a class="btn btn-dark btn-lg" href="{{ $.Site.Params.githubURL}}" role="button">Github <img src="github logo-light.svg" height="30"></a>
-</div>
 </div>
 <div id="gradient" class="background">
   <span></span>
@@ -51,16 +49,3 @@
     z-index: -100;
 }
 </style>
-<script>
-    $(document).ready(function() {
-        // Transition effect for navbar 
-        $(window).scroll(function() {
-          // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 500) { 
-              $('.navbar').addClass('bg-primary');
-          } else {
-              $('.navbar').removeClass('bg-primary');
-          }
-        });
-});
-</script>
