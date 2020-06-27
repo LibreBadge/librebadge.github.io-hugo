@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://librebadge.com/"
 languageCode = "en-us"
 title = "LibreBadge"
 theme = "librebadge"
