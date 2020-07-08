@@ -4,5 +4,6 @@ title = "LibreBadge"
 theme = "librebadge"
 [params]
   githubURL = "http://github.com/LibreBadge/LibreBadge"
-  logo = "librebadgelogo.svg"
+  logo = "librebadge-full.svg"
+  favicon = "librebadge-icon.svg"
   description = "An open-source web based ID Badge solution written in Python Django"
